@@ -1,0 +1,35 @@
+source "gpg2 -dq $HOME/.my-pwds.gpg |"
+
+# IMAP
+set imap_user="patrick.bucher@mailbox.org"
+set imap_pass=$my_pw_personal
+set folder="imaps://imap.mailbox.org/"
+set spoolfile="+INBOX"
+set imap_check_subscribed
+set my_name="Patrick Bucher"
+
+# SMTP
+set my_user="patrick.bucher@mailbox.org"
+set my_pass=$my_pw_personal
+set smtp_url="smtps://$my_user:$my_pass@smtp.mailbox.org"
+set from="patrick.bucher@mailbox.org"
+set use_from=yes
+set realname="Patrick Bucher"
+
+# Folders
+set record="=Gesendete Objekte"
+set postponed="=Entwürfe"
+set trash="=Papierkorb"
+
+# Security
+set ssl_starttls=yes
+set ssl_force_tls=yes
+set crypt_use_gpgme=yes
+
+# Polling
+set mail_check=10
+
+# Editor
+set editor='vim'
+
+source ~/.mutt/gpg.rc
