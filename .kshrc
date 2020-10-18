@@ -27,3 +27,10 @@ alias gmg='git merge'
 export GPG_TTY=$(tty)
 
 alias t='tmux -2'
+
+alias pc='pass -c'
+
+alias lpr='/usr/local/bin/lpr'
+alias lpq='/usr/local/bin/lpq'
+alias lpoptions='/usr/local/bin/lpoptions'
+alias cancel='/usr/local/bin/cancel'
